@@ -1,0 +1,13 @@
+{
+  "name": "GithubCodePathClipper",
+  "description": "",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*:github.com/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_end",
+      "all_frames": false,
+    }
+}
